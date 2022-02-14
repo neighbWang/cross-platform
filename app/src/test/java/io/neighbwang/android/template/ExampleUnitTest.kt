@@ -1,4 +1,4 @@
-package io.johnsonlee.android.template
+package io.neighbwang.android.template
 
 import org.junit.Test
 

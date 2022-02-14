@@ -7,7 +7,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "io.johnsonlee.android.template"
+        applicationId "io.neighbwang.android.template"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1

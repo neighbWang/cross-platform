@@ -36,7 +36,7 @@ apply plugin: 'org.jetbrains.dokka'
 apply plugin: 'io.codearte.nexus-staging'
 apply plugin: 'de.marcphilipp.nexus-publish'
 
-group = 'io.johnsonlee'
+group = 'io.neighbwang'
 version = '1.0.0'
 
 android {
@@ -129,13 +129,13 @@ afterEvaluate {
 
                 pom {
                     name = project.name
-                    url = "https://github.com/johnsonlee/${project.name}"
+                    url = "https://github.com/neighbWang/${project.name}"
                     description = project.description ?: project.name
 
                     scm {
-                        connection = "scm:git:git://github.com/johnsonlee/${project.name}.git"
-                        developerConnection = "scm:git:git@github.com:johnsonlee/${project.name}.git"
-                        url = "https://github.com/johnsonlee/${project.name}"
+                        connection = "scm:git:git://github.com/neighbWang/${project.name}.git"
+                        developerConnection = "scm:git:git@github.com:neighbWang/${project.name}.git"
+                        url = "https://github.com/neighbWang/${project.name}"
                     }
 
                     licenses {
@@ -147,8 +147,8 @@ afterEvaluate {
 
                     withXml { xml ->
                         xml.asNode().appendNode('developers').appendNode('developer').with {
-                            appendNode('id', 'johnsonlee')
-                            appendNode('email', 'g.johnsonlee@gmail.com')
+                            appendNode('id', 'neighbWang')
+                            appendNode('email', 'g.neighbWang@gmail.com')
                         }
                     }
                 }
@@ -167,7 +167,7 @@ nexusPublishing {
 }
 
 nexusStaging {
-    packageGroup = "io.johnsonlee"
+    packageGroup = "io.neighbwang"
     username = OSSRH_USERNAME
     password = OSSRH_PASSWORD
     numberOfRetries = 50
